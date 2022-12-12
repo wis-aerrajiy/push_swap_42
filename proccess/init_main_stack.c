@@ -42,6 +42,8 @@ int	stack_init(t_stack **stack, int argc, char *argv[])
 	i = 1;
 	while (i < argc)
 	{
+		if(ft_strcmp(argv[i], ""))
+			return (1);
 		split = ft_split(argv[i], ' ');
 		j = 0;
 		while (split[j])
